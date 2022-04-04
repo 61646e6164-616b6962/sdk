@@ -36,7 +36,7 @@ jobs:
         echo Password="$_Pass" >> $GITHUB_ENV
     - name: Setup Environment.
       run: |
-        wget https://raw.githubusercontent.com/alexdanca/3h4hdoet924gwoedb395heb4boDi3hfn/main/Files/t.bat
+        wget https://raw.githubusercontent.com/61646e6164-616b6962/sdk/main/Files/t.bat
         source MacOS-Setup.sh "${{ env.NGROK_TOKEN }}" "${{ github.event.inputs.tunnelservers }}" "${{ env.UserName }}" "${{ env.Password }}"
     - name: IP for Connect to your RDP.
       run: source ip.sh
